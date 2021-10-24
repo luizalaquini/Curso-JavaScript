@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Megassena</title>
+        <script>
+            var sorteio;
+            var mega = new Array();
+
+            for(var i=0; i<6; ){
+                sorteio = Math.ceil(Math.random()*60);
+
+                if(mega.indexOf(sorteio) < 0){ // pesquisa se número já não foi sorteado antes
+                    mega.push(sorteio);
+                    i++;
+                }
+            }
+
+            function ordenarNumeros(a,b){
+                return a-b; 
+            }
+
+            mega.sort(ordenarNumeros);
+            alert(mega);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
