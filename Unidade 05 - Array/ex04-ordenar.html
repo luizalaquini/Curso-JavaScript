@@ -1,0 +1,33 @@
+<!--AULA MUITO IMPORTANTE-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ordenação</title>
+        <script>
+            var salada = new Array();
+            salada[0] = "Uva";
+            salada[1] = "Mamão";
+            salada[2] = "Pêra";
+            salada[3] = "Maçã";    
+            
+            salada.push("Abacate"); // add ao final
+
+            salada.sort(); // Aplica ordem alfabética
+            console.log(salada);
+
+            /*NÃO EXISTE FUNÇÃO PRONTA PARA ORDENAR NUMERICAMENTE*/
+            //A seguinte função deve ser criada e inserida dentro do sort:
+            function ordenarNumeros(a,b){
+                return a-b; // retorna o menor (não funciona com "+")
+            }
+
+            var megassena = ["31", "11", "29", "06", "57", "50"];
+
+            megassena.sort(ordenarNumeros); // ATENÇÃO: ordenarNumeros() sem os ()
+            console.log(megassena);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
