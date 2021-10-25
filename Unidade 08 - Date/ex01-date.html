@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Data</title>
+        <script>
+            var agora = new Date();
+
+            console.log(agora.getFullYear()); // retorna Ano
+            console.log(agora.getMonth()); // retorna Mês - ATENÇÃO: variação de 0 (Janeiro) a 11 (Dezembro), pois se trata de um Array 
+            console.log(agora.getDate()); // retorna Dia do mês (1 - 31)
+            console.log(agora.getDay()); // retorna Dia da semana - ATENÇÃO: variação de 0 (Domingo) a 6 (Sábado), pois se trata de um Array
+            
+            // Solução para aparecer o mês e o  dia da semana:
+            var meses = new Array ("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+            var dias = new Array("Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado");
+            
+            console.log("Hoje é " +dias[agora.getDay()] +", dia " +agora.getDate() +" de " +meses[agora.getMonth()] +" de " +agora.getFullYear());
+
+            // Dia da semana de uma data qualquer:
+            var nascimento = new Date(2000,10,6); // 6 de novembro de 2000
+
+            console.log("Luiza nasceu " +dias[nascimento.getDay()]);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

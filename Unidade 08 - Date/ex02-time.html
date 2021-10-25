@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hora</title>
+        <script>
+            var agora = new Date();
+
+            console.log(agora.getHours()); // Exibe as HORAS;
+            console.log(agora.getMinutes()); // Exibe os MINUTOS;
+            console.log(agora.getSeconds()); // Exibe os SEGUNDOS;
+            console.log(agora.getMilliseconds()); // Exibe os MILISSEGUNDOS;
+
+            function setDoisDigitos(tempo){
+                if (tempo < 10){
+                    return "0" + tempo;
+                } else {
+                    return tempo;
+                }
+            }
+
+            console.log(setDoisDigitos(agora.getHours()) + ":" + setDoisDigitos(agora.getMinutes()));
+
+            var nascimento = new Date(2000,10,6,18,55,0); // 6//11/2000 às 17h55min0s
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
